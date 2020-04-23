@@ -79,6 +79,20 @@ public class Entity1: IEntity {}
 public class Entity2: IEntity {}
 ```
 
+### Have an ID
+
+### Equality members in the Base Class
+
+## Value Object Base Class
+
+### Don't have an ID
+
+### Can't place equality members to the Base Class
+
+![Value Object vs Entity](value-object-vs-entity.png)
+![Value Object vs .NET Value Types](value-object-vs-dotnet-value-types.png)
+![When To Write Unit Tests](when-unit-test.png)
+
 ### Further Readings
 
 <https://martinfowler.com/bliki/ValueObject.html>
