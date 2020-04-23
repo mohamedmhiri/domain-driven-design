@@ -91,9 +91,19 @@ public class Entity2: IEntity {}
 
 ![Value Object vs Entity](value-object-vs-entity.png)
 ![Value Object vs .NET Value Types](value-object-vs-dotnet-value-types.png)
+
+## When to write Unit Tests
+
 ![When To Write Unit Tests](when-unit-test.png)
+
+Two Modes in which we write code:
+
+- Sure about what to do with the code. So, create Unit Tests upfront before starting implementing the core functionality
+
+- Experimenting and Unit Tests slows down the productivity
 
 ### Further Readings
 
 <https://martinfowler.com/bliki/ValueObject.html>
 <http://bit.ly/1FSzTg1>
+<http://bit.ly/1XF0J6H>

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DddInPractice.Logic
+﻿namespace DddInPractice.Logic
 {
   public sealed class SnackMachine : Entity
   {
