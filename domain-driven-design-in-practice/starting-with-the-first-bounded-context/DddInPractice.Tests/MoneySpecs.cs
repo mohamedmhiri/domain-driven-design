@@ -74,7 +74,7 @@ namespace DddInPractice.Tests
       action.Should().Throw<InvalidOperationException>();
     }
 
-    
+
     [Theory]
     [InlineData(0, 0, 0, 0, 0, 0, 0)]
     [InlineData(1, 0, 0, 0, 0, 0, 0.01)]
@@ -107,7 +107,7 @@ namespace DddInPractice.Tests
     }
 
     [Fact]
-    public void Sustraction_of_two_money_produces_correct_result()
+    public void Substraction_of_two_money_produces_correct_result()
     {
       Money money1 = new Money(10, 10, 10, 10, 10, 10);
       Money money2 = new Money(1, 2, 3, 4, 5, 6);
@@ -120,6 +120,20 @@ namespace DddInPractice.Tests
       result.OneHundredMillimesCount.Should().Be(6);
       result.TwoHundredMillimesCount.Should().Be(5);
       result.FiveHundredMillimesCount.Should().Be(4);
+    }
+
+    [Fact]
+    public void cannot_substract_more_than_exists()
+    {
+      Money money1 = new Money(1, 0, 0, 0, 0, 0);
+      Money money2 = new Money(0, 1, 0, 0, 0, 0);
+
+      Action action = () =>
+      {
+        Money money = money1 - money2;
+      };
+
+      action.Should().Throw<InvalidOperationException>();
     }
   }
 }

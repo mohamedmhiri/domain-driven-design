@@ -102,6 +102,9 @@ Two Modes in which we write code:
 
 - Experimenting and Unit Tests slows down the productivity
 
+![Summary](summary.png)
+![Summary](summary2.png)
+
 ### Further Readings
 
 <https://martinfowler.com/bliki/ValueObject.html>

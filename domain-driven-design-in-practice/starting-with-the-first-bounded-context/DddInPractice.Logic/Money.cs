@@ -4,6 +4,14 @@ namespace DddInPractice.Logic
 {
   public sealed class Money : ValueObject<Money>
   {
+
+    public static readonly Money None = new Money(0, 0, 0, 0, 0, 0);
+    public static readonly Money TenMillimes = new Money(1, 0, 0, 0, 0, 0);
+    public static readonly Money TwentyMillimes = new Money(0, 1, 0, 0, 0, 0);
+    public static readonly Money FiftyMillimes = new Money(0, 0, 1, 0, 0, 0);
+    public static readonly Money OneHundredMillimes = new Money(0, 0, 0, 1, 0, 0);
+    public static readonly Money TwoHundredMillimes = new Money(0, 0, 0, 0, 1, 0);
+    public static readonly Money FiveHundredMillimes = new Money(0, 0, 0, 0, 0, 1);
     public int TenMillimesCount { get; private set; }
     public int TwentyMillimesCount { get; private set; }
     public int FiftyMillimesCount { get; private set; }
